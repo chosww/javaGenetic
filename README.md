@@ -19,7 +19,7 @@ For an example, "hello World" is used as goal string. Note that the goal string 
 
 ### Population
 
-You can modify number of species in population by changing variable population in GAInt class.
+You can modify number of species in a population by changing variable population in GAInt class.
 
 ```java
     int population = 20;
@@ -27,17 +27,22 @@ You can modify number of species in population by changing variable population i
 
 ## Project Detail
 
-###Initialize random population
+### Initialize random population
+
 Once you set the goal string, the program will generate n species of random strings with same length as the goal string.
 
-###Checking for fitness
+### Checking for fitness
+
 These random species will mutate themselves to the goal string by checking how close they are to the goal string.
 
-###Crossover
+### Crossover
+
 Within the population, species will create new species by doing what's known as crossover(please refer: https://en.wikipedia.org/wiki/Chromosomal_crossover).
 
-###Mutation and new generation
+### Mutation and new generation
+
 There will be random mutation to the species. Once crossover and random mutation is over, it will create next generation.
 
-###Completion
+### Completion
+
 The program will repeat above steps untill species in a population are close enough to the goal string.
